@@ -14,7 +14,7 @@ filename = now.strftime("%Y%m%d_%H%M%S") + ".csv"
 if __name__ == '__main__':
     bmx055bus = bmx055.BMX055()
     mcp3425bus = mcp3425.MCP3425()
-# CSVファイルを書き込みモードで開く
+
     csvfile = open('./data/' + filename, "w", newline="")
     try:
         print('If you want to stop logging, press Ctrl + C')
